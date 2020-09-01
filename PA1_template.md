@@ -94,7 +94,7 @@ median(steps_per_day_imp$Steps)
 ## [1] 10766.19
 ```
 
-## Are there differences in activity patterns between weekdays and weekends?
+## Are there differences in activity patterns between weekdays and weekends? 
 
 ```r
 df$weekday <-  ifelse(as.POSIXlt(df$date)$wday %in% c(0,6), 'weekend', 'weekday')
